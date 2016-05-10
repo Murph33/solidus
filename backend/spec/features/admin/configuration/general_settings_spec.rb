@@ -15,7 +15,7 @@ describe "General Settings", type: :feature, js: true do
 
   context "visiting general settings" do
     it "should have the right content" do
-      expect(page).to have_content("Settings / General / Settings")
+      expect(page).to have_content("SettingsGeneralSettings")
       expect(page).to have_field("store_name", with: "Test Store")
       expect(page).to have_field("store_url", with: "test.example.org")
       expect(page).to have_field("store_mail_from_address", with: "test@example.org")
